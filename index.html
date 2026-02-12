@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jergan App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Jergan App</h1>
+  <div class="buttons">
+    <button onclick="updatePreview()">Run</button>
+    <button onclick="downloadApp()">Download</button>
+  </div>
+</header>
+
+<div class="workspace">
+
+  <div class="tabs">
+    <button onclick="showTab('html')">HTML</button>
+    <button onclick="showTab('css')">CSS</button>
+    <button onclick="showTab('js')">JS</button>
+    <button onclick="showTab('json')">JSON</button>
+  </div>
+
+  <textarea id="html" class="editor"></textarea>
+  <textarea id="css" class="editor hidden"></textarea>
+  <textarea id="js" class="editor hidden"></textarea>
+  <textarea id="json" class="editor hidden"></textarea>
+
+  <iframe id="preview"></iframe>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
